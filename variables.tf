@@ -9,5 +9,3 @@ variable "name" {
 variable "project" {
   type = string
 }
-
-
