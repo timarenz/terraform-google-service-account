@@ -5,7 +5,7 @@ resource "random_string" "main" {
 }
 
 resource "google_service_account" "main" {
-  account_id   = "gcp-${random_string.main.result}"
-  display_name = "${var.environment_name}-${var.name}"
+  account_id   = var.name
+  display_name = var.name
   project      = var.project
 }
